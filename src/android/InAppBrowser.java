@@ -955,6 +955,8 @@ public class InAppBrowser extends CordovaPlugin {
                         }
                         mUploadCallback = filePathCallback;
 
+                        LOG.d(LOG_TAG, FileChooserParams.Environment);
+
                         Intent takePictureIntent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
 
                         if(takePictureIntent.resolveActivity(cordova.getActivity().getPackageManager()) != null) {
