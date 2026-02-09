@@ -1170,7 +1170,7 @@ public class InAppBrowser extends CordovaPlugin {
 
             Uri[] results = null;
             //Check if response is positive
-            if(resultCode== Activity.RESULT_OK){
+            if(resultCode== cordova.getActivity().RESULT_OK){
                 if(requestCode == FILECHOOSER_REQUESTCODE){
                     if(null == mUploadCallback){
                         return;
